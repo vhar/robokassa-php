@@ -1,0 +1,27 @@
+{
+    "name": "vhar/robokassa",
+    "description": "PHP класс для работы с платежным сервисом Robokassa",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "robokassa",
+        "payment",
+        "php"
+    ],
+    "homepage": "https://github.com/vhar/robokassa",
+    "authors": [
+        {
+            "name": "Vladimir Kharinenkov",
+            "email": "vhar@mail.ru"
+        }
+    ],
+    "require": {
+        "php": ">8.1",
+        "nesbot/carbon": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vhar\\Robokassa\\": "src/"
+        }
+    }
+}

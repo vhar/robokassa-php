@@ -77,7 +77,7 @@ final class Invoice
 
         if (empty($params['Description'])) {
             throw new \InvalidArgumentException('The "Description" parameter is not defined.');
-        } elseif (strlen($params['Description']) > 100) {
+        } elseif (mb_strlen($params['Description']) > 100) {
             throw new \InvalidArgumentException('The "Description" parameter must not exceed 100 characters in length.');
         } else {
             $this->Description = $params['Description'];

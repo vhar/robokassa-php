@@ -46,7 +46,7 @@ readonly final class ReceiptItem
     {
         if (empty($params['name'])) {
             throw new \InvalidArgumentException('The "name" parameter is not defined.');
-        } elseif (strlen($params['name']) > 128) {
+        } elseif (mb_strlen($params['name']) > 128) {
             throw new \InvalidArgumentException('The "name" parameter must not exceed 128 characters in length.');
         } else {
             $name = $params['name'];
@@ -108,7 +108,7 @@ readonly final class ReceiptItem
     {
         if (empty($params['Name'])) {
             throw new \InvalidArgumentException('The "Name" parameter is not defined.');
-        } elseif (strlen($params['Name']) > 128) {
+        } elseif (mb_strlen($params['Name']) > 128) {
             throw new \InvalidArgumentException('The "Name" parameter must not exceed 128 characters in length.');
         } else {
             $name = $params['Name'];

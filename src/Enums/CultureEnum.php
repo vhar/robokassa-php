@@ -1,4 +1,4 @@
-<?
+<?php
 
 namespace Vhar\Robokassa\Enums;
 
